@@ -1,0 +1,52 @@
+.progress_bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  z-index: 100;
+  color: #6d4545;
+  border-radius: 10px;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: transparent;
+}
+
+.progress_bar Button {
+  padding: 1px;
+  font-size: .9rem;
+}
+
+.trending_row {
+  position: relative;
+}
+
+.trending_row:nth-of-type(even) {
+  background: #bbd688;
+  border-radius: 10px;
+  margin-bottom: .1rem;
+}
+
+.trending_row:nth-of-type(odd) {
+  margin-bottom: .1rem;
+  background: #e7f074;
+  border-radius: 10px;
+}
+
+.trending_row .progress {
+  width: 80%;
+  height: 100%;
+  background: #af90f7;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  border-right: 1px solid #000000b0;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+
+.head {
+  text-align: center;
+}
+/*# sourceMappingURL=Homepage.css.map */

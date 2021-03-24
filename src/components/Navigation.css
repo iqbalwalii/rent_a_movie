@@ -1,0 +1,20 @@
+.nav_form {
+  display: inherit;
+  -ms-flex-item-align: flex-right;
+      align-self: flex-right;
+}
+
+.nav_form button {
+  margin-left: 1rem;
+}
+
+.logo {
+  margin-left: 1rem;
+}
+
+.progress_bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+/*# sourceMappingURL=Navigation.css.map */
