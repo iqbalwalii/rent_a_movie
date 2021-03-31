@@ -1,7 +1,11 @@
-.nav_form
-    display: inherit
-    align-self: flex-right
-    button
-        margin-left: 1rem
-.logo
-    margin-left: 1rem
+.navbar
+    display: flex
+
+    justify-content: space-between
+    & .nav_links
+        list-style: none
+        display: flex
+        & li
+            margin-right: 1rem
+    input
+        width: 500px

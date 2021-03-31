@@ -1,20 +1,24 @@
-.nav_form {
-  display: inherit;
-  -ms-flex-item-align: flex-right;
-      align-self: flex-right;
-}
-
-.nav_form button {
-  margin-left: 1rem;
-}
-
-.logo {
-  margin-left: 1rem;
-}
-
-.progress_bar {
+.navbar {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.navbar .nav_links {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.navbar .nav_links li {
+  margin-right: 1rem;
+}
+
+.navbar input {
+  width: 500px;
 }
 /*# sourceMappingURL=Navigation.css.map */

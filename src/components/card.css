@@ -1,0 +1,99 @@
+.cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  width: 100vw;
+  margin: auto;
+}
+
+.cards .card {
+  -webkit-perspective: 1500px;
+          perspective: 1500px;
+  text-transform: uppercase;
+  position: relative;
+  width: 22vw;
+  margin-bottom: 3.5rem;
+  border: none;
+}
+
+.cards .card img {
+  -webkit-filter: brightness(75%);
+          filter: brightness(75%);
+  border-radius: 15px;
+  width: 90%;
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+}
+
+.cards .card__side {
+  border-radius: 5px;
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-transition: all 0.8s ease;
+  transition: all 0.8s ease;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+}
+
+.cards .card__side .project_name {
+  font-size: 1.2rem;
+  margin-bottom: 0.8rem;
+  font-family: Acme, sans-serif;
+}
+
+.cards .card__side p {
+  font-family: caveat, cursive;
+  font-size: 1.2rem;
+  padding: 0.5rem 1rem;
+  margin-top: 5rem;
+  margin-bottom: 2rem;
+}
+
+.cards .card__side--front {
+  background-color: #ffffff2d;
+  border-radius: 20px;
+}
+
+.cards .card__side--back {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+  background-color: #f1d94e5e;
+  border-radius: 20px;
+}
+
+.cards .card .project_description {
+  margin-top: 0.5rem;
+  font-family: 'Caveat', cursive;
+  font-size: 1.2rem;
+}
+
+.cards .card a {
+  background: yellow;
+  padding: 0.6rem 1.3rem;
+  border-radius: 10px;
+  -webkit-backdrop-filter: blur(30px);
+          backdrop-filter: blur(30px);
+}
+
+.cards .card:hover .card__side--front {
+  -webkit-transform: rotateY(-180deg);
+          transform: rotateY(-180deg);
+}
+
+.cards .card:hover .card__side--back {
+  -webkit-transform: rotateY(0);
+          transform: rotateY(0);
+}
+/*# sourceMappingURL=card.css.map */
