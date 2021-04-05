@@ -1,99 +1,113 @@
-.cards {
+@import url("https://fonts.googleapis.com/css2?family=Epilogue:wght@300;500;600;700&display=swap");
+.card {
+  -webkit-box-shadow: 1px 2px 5px 5px #2422221f;
+          box-shadow: 1px 2px 5px 5px #2422221f;
+  width: 22%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 10px;
+  position: relative;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+.card:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+.card:hover .movie-actions {
+  display: block;
+}
+
+.card:hover .movie-details {
+  display: none;
+}
+
+.card .movie-rating {
+  position: absolute;
+  top: 5%;
+  right: 10%;
+  background: #fff;
+  border-radius: 50%;
+  padding: 4px 4px;
+  font-size: 1rem;
+  border: 2px solid green;
+}
+
+.card .movie-details {
+  padding: 1rem;
+  font-family: 'Epilogue', sans-serif;
+  -webkit-transition: all .3s linear;
+  transition: all .3s linear;
+}
+
+.card .movie-image {
+  margin: auto;
+  height: 35vh;
+  width: 100%;
+  border-radius: 10px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.card .movie-title {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 25px;
+}
+
+.card .movie-description {
+  text-align: center;
+  margin-top: .5rem;
+}
+
+.card .movie-actions {
+  padding: 1rem;
+  text-align: center;
+  display: none;
+}
+
+.card .movie-buttons {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  width: 100vw;
-  margin: auto;
+  margin-top: 1rem;
 }
 
-.cards .card {
-  -webkit-perspective: 1500px;
-          perspective: 1500px;
-  text-transform: uppercase;
-  position: relative;
-  width: 22vw;
-  margin-bottom: 3.5rem;
+.card .movie-buttons > button {
   border: none;
+  outline: none;
+  background: none;
+  padding: 1rem;
+  font-family: 'Epilogue', sans-serif;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: .7rem;
+  font-weight: 800;
+  letter-spacing: 1px;
 }
 
-.cards .card img {
-  -webkit-filter: brightness(75%);
-          filter: brightness(75%);
-  border-radius: 15px;
-  width: 90%;
-  margin-top: 3rem;
-  margin-bottom: 2rem;
-}
-
-.cards .card__side {
-  border-radius: 5px;
-  position: absolute;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  -webkit-transition: all 0.8s ease;
-  transition: all 0.8s ease;
-  -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
-}
-
-.cards .card__side .project_name {
-  font-size: 1.2rem;
-  margin-bottom: 0.8rem;
-  font-family: Acme, sans-serif;
-}
-
-.cards .card__side p {
-  font-family: caveat, cursive;
-  font-size: 1.2rem;
-  padding: 0.5rem 1rem;
-  margin-top: 5rem;
-  margin-bottom: 2rem;
-}
-
-.cards .card__side--front {
-  background-color: #ffffff2d;
-  border-radius: 20px;
-}
-
-.cards .card__side--back {
-  -webkit-transform: rotateY(180deg);
-          transform: rotateY(180deg);
-  background-color: #f1d94e5e;
-  border-radius: 20px;
-}
-
-.cards .card .project_description {
-  margin-top: 0.5rem;
-  font-family: 'Caveat', cursive;
-  font-size: 1.2rem;
-}
-
-.cards .card a {
-  background: yellow;
-  padding: 0.6rem 1.3rem;
+.card .movie-buttons > button:first-child {
+  background: magenta;
   border-radius: 10px;
-  -webkit-backdrop-filter: blur(30px);
-          backdrop-filter: blur(30px);
 }
 
-.cards .card:hover .card__side--front {
-  -webkit-transform: rotateY(-180deg);
-          transform: rotateY(-180deg);
+.card .movie-buttons > button:last-child {
+  border: 2px solid magenta;
+  color: #000;
+  border-radius: 10px;
 }
-
-.cards .card:hover .card__side--back {
-  -webkit-transform: rotateY(0);
-          transform: rotateY(0);
-}
-/*# sourceMappingURL=card.css.map */
+/*# sourceMappingURL=Card.css.map */

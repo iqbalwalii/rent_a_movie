@@ -1,21 +1,27 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './Navigation.css';
+import Search from './Search';
 const Navigation = () => {
 	return (
 		<nav className='navbar'>
 			<div className='logo'>
 				<h3>Rent-a-Movie</h3>
 			</div>
-			<form action=''>
-				<input type='text' name='' id='' />
-				<button>Search</button>
-			</form>
+			<Search />
 			<ul className='nav_links'>
-				<li>Home</li>
-				<li>About</li>
-				<li>Movies</li>
-				<li>Contact</li>
-				<li>API</li>
+				<li>
+					<Link to='/movies' />
+					Movies
+				</li>
+				<li>
+					<Link to='/contact' />
+					Contact
+				</li>
+				<li>
+					<Link to='/about' />
+					About
+				</li>
 			</ul>
 		</nav>
 	);

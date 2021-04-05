@@ -2,9 +2,14 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  width: 100vw;
+  margin: 1rem auto;
+  margin-top: 0;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  background-color: #ffffff52;
+  padding: 1rem 2rem;
 }
 
 .navbar .nav_links {
@@ -12,13 +17,24 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  font-size: 1.1rem;
+  font-family: 'Epilogue', sans-serif;
+  -ms-flex-item-align: center;
+      align-self: center;
 }
 
 .navbar .nav_links li {
   margin-right: 1rem;
+  -webkit-transition: all .2s linear;
+  transition: all .2s linear;
+  cursor: pointer;
 }
 
-.navbar input {
-  width: 500px;
+.navbar .nav_links li:hover {
+  color: #45b4e7;
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
 }
 /*# sourceMappingURL=Navigation.css.map */

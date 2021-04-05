@@ -89,6 +89,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-top: 2rem;
 }
 
 .slide.active .col-left,

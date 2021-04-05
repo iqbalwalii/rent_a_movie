@@ -1,0 +1,91 @@
+footer {
+  height: 60vh;
+  width: 100vw;
+  font-family: 'Epilogue', sans-serif;
+}
+
+footer .main_footer {
+  background: #212121;
+  width: 100vw;
+  height: 90%;
+  margin-top: -1%;
+  padding: 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+footer .main_footer .logo {
+  margin-left: -4%;
+}
+
+footer .main_footer .services, footer .main_footer .links, footer .main_footer .contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+footer .main_footer .services h4, footer .main_footer .links h4, footer .main_footer .contact h4 {
+  color: #ecd716;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+footer .main_footer .services a, footer .main_footer .links a, footer .main_footer .contact a {
+  font-weight: 100;
+  text-decoration: none;
+  color: #fff;
+  font-size: 1rem;
+  padding: .7rem 0;
+  position: relative;
+  -webkit-transition: all .3s linear;
+  transition: all .3s linear;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+footer .main_footer .services a::after, footer .main_footer .links a::after, footer .main_footer .contact a::after {
+  content: "";
+  display: block;
+  height: 2px;
+  width: 0;
+  position: absolute;
+  bottom: 20%;
+  left: 0;
+  background-color: #0099ffa8;
+  -webkit-transition: all .3s linear;
+  transition: all .3s linear;
+}
+
+footer .main_footer .services a:hover, footer .main_footer .links a:hover, footer .main_footer .contact a:hover {
+  color: #0099ffa8;
+}
+
+footer .main_footer .services a:hover::after, footer .main_footer .links a:hover::after, footer .main_footer .contact a:hover::after {
+  width: 100%;
+}
+
+footer .main_footer .copyright {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  text-align: center;
+  color: #fff;
+  opacity: .4;
+  margin-top: 2rem;
+  font-size: .7rem;
+}
+
+footer .main_footer img {
+  width: 150px;
+}
+/*# sourceMappingURL=Footer.css.map */

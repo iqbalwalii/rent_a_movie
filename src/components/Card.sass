@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@300;500;600;700&display=swap');
+.card
+    box-shadow: 1px 2px 5px 5px #2422221f
+    width: 22%
+    display: flex
+    flex-direction: column
+    justify-content: center
+    border-radius: 10px
+    position: relative
+    transition: all .3s ease-in-out
+    &:hover
+        transform: scale(1.05)
+    &:hover .movie-actions
+        display: block
+    &:hover .movie-details
+        display: none
+    & .movie-rating
+        position: absolute
+        top: 5%
+        right: 10%
+        background: #fff
+        border-radius: 50%
+        padding: 4px 4px
+        font-size: 1rem
+        border: 2px solid green
+    & .movie-details
+        padding: 1rem
+        font-family: 'Epilogue', sans-serif
+        transition: all .3s linear        
+    & .movie-image
+        margin: auto
+        height: 35vh
+        width: 100%
+        border-radius: 10px
+        object-fit: cover
+    & .movie-title
+        font-size: 1.2rem
+        text-transform: uppercase
+        text-align: center
+        line-height: 25px
+    & .movie-description
+        text-align: center
+        margin-top: .5rem
+    & .movie-actions
+        padding: 1rem
+        text-align: center
+        display: none
+    & .movie-buttons
+        display: flex
+        justify-content: space-evenly
+        margin-top: 1rem
+        & > button
+            border: none
+            outline: none
+            background: none
+            padding: 1rem
+            font-family: 'Epilogue', sans-serif
+            color: #fff
+            text-transform: uppercase
+            font-size: .7rem
+            font-weight: 800
+            letter-spacing: 1px
+            &:first-child
+                background: magenta
+                border-radius: 10px
+            &:last-child
+                border: 2px solid magenta
+                color: #000
+                border-radius: 10px

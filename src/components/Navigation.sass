@@ -1,11 +1,24 @@
 .navbar
     display: flex
-
+    width: 100vw
+    margin: 1rem auto
+    margin-top: 0
     justify-content: space-between
+    background-color: #ffffff52
+    padding: 1rem 2rem
+
+
     & .nav_links
         list-style: none
         display: flex
+        justify-content: space-around
+        font-size: 1.1rem
+        font-family: 'Epilogue', sans-serif
+        align-self: center
         & li
             margin-right: 1rem
-    input
-        width: 500px
+            transition: all .2s linear
+            cursor: pointer
+            &:hover
+                color: #45b4e7
+                transform: scale(1.02)

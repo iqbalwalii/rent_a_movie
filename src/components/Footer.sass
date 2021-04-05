@@ -1,0 +1,56 @@
+footer
+    height: 60vh
+    width: 100vw
+    font-family: 'Epilogue', sans-serif
+    & .main_footer
+        background: #212121
+        width: 100vw
+        height: 90%
+        margin-top: -1%
+        padding: 3rem
+        display: flex
+        justify-content: space-evenly
+        flex-wrap: wrap
+        & .logo
+            margin-left: -4%
+        & .services, & .links, & .contact
+            display: flex
+            flex-direction: column
+            & h4
+                color: #ecd716
+                margin-bottom: 1rem    
+                font-weight: 600
+            & a
+                font-weight: 100
+                text-decoration: none
+                color: #fff
+                font-size: 1rem
+                padding: .7rem 0
+                position: relative
+                transition: all .3s linear
+                width: fit-content
+                &::after
+                    content: ""
+                    display: block
+                    height: 2px
+                    width: 0
+                    position: absolute
+                    bottom: 20%
+                    left: 0
+                    background-color: #0099ffa8
+                    transition: all .3s linear
+                &:hover
+                    color: #0099ffa8
+                &:hover::after
+                    width: 100%
+                    
+        & .copyright
+            flex-basis: 100%
+            text-align: center
+            color: #fff
+            opacity: .4
+            margin-top: 2rem
+            font-size: .7rem
+        & img
+            width: 150px
+

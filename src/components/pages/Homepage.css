@@ -1,11 +1,33 @@
+html {
+  background-image: url("../../images/bg.jpg");
+}
+
+body {
+  -webkit-backdrop-filter: blur(30px);
+          backdrop-filter: blur(30px);
+  overflow-x: hidden;
+}
+
+.container {
+  background: #ffffff2f;
+  width: 90vw;
+  margin: 2rem auto;
+  border-radius: 50px;
+  padding-top: 1px;
+}
+
 .classics .cards {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  width: 80vw;
+  padding: 2rem auto;
+  margin: auto;
 }
 /*# sourceMappingURL=Homepage.css.map */
