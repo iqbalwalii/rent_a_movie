@@ -5,17 +5,19 @@ import { BrowserRouter, Switch, Route } from 'react-router-dom';
 // import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 import Footer from './components/Footer';
+import Movies from './components/pages/Movies';
+import Detail from './components/pages/Detail';
 function App() {
 	return (
 		<BrowserRouter>
 			<Navigation />
-			<switch>
-				<Route path='/' component={Homepage} />
-				{/* <Route path='/movies' component={Movies} />
-				<Route path='/contact' component={Contact} />
-				<Route path='/about' component={About} />
-				<Route path='/movie:id' component={MovieItem} /> */}
-			</switch>
+			<Switch>
+				<Route exact path='/' component={Homepage} />
+				<Route exact path='/movies' component={Movies} />
+				<Route path='/detail' component={Detail} />
+				{/*<Route path='/contact' component={Contact} />
+				<Route path='/about' component={About} />*/}
+			</Switch>
 			<Footer />
 		</BrowserRouter>
 	);

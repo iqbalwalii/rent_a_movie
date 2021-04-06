@@ -17,11 +17,14 @@
   position: relative;
   -webkit-transition: all .3s ease-in-out;
   transition: all .3s ease-in-out;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
 }
 
 .card:hover {
-  -webkit-transform: scale(1.05);
-          transform: scale(1.05);
+  -webkit-transform: scale(1.03);
+          transform: scale(1.03);
 }
 
 .card:hover .movie-actions {
@@ -40,10 +43,11 @@
   border-radius: 50%;
   padding: 4px 4px;
   font-size: 1rem;
-  border: 2px solid green;
+  border: 3px solid green;
 }
 
 .card .movie-details {
+  height: 100px;
   padding: 1rem;
   font-family: 'Epilogue', sans-serif;
   -webkit-transition: all .3s linear;
@@ -75,6 +79,7 @@
   padding: 1rem;
   text-align: center;
   display: none;
+  height: 100px;
 }
 
 .card .movie-buttons {

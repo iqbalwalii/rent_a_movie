@@ -10,6 +10,9 @@
           justify-content: space-between;
   background-color: #ffffff52;
   padding: 1rem 2rem;
+  position: fixed;
+  top: 0;
+  left: 0;
 }
 
 .navbar .nav_links {
@@ -30,6 +33,11 @@
   -webkit-transition: all .2s linear;
   transition: all .2s linear;
   cursor: pointer;
+}
+
+.navbar .nav_links li a, .navbar .nav_links li a:visited {
+  text-decoration: none;
+  color: #212121;
 }
 
 .navbar .nav_links li:hover {

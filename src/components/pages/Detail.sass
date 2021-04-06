@@ -1,0 +1,93 @@
+
+section#movie-details
+    width: 80vw
+    margin: 6rem auto
+    margin-bottom: 0
+    font-family: 'Epilogue', sans-serif
+    padding: 2rem
+    
+    & .movie-header
+        display: flex
+        justify-content: space-around
+      
+        & .movie-poster
+            width: 30%
+            & img
+                width: 100%
+
+        & .movie-right
+            width: 60%
+            
+            & .detail-language
+                & > span
+                    display: block
+                    margin: 1rem auto
+                    font-size: .9rem
+
+            & .detail-name
+                text-transform: uppercase
+                margin-bottom: 1rem
+            
+            & .detail-info
+                display: flex
+                justify-content: space-between
+                width: 60%
+            
+            & .detail-description
+                margin: 1rem 0
+                font-size: .8rem
+                line-height: 20px
+            & .detail-actions
+                & > button
+                    border: none
+                    outline: none
+                    margin-right: 10px
+                    padding: 10px
+                    color: #f2f2f2
+                    border-radius: 10px
+                    &:first-child
+                        background-color: magenta
+                        border: 2px solid transparent
+                    
+                    &:last-child
+                        color: #212121
+                        background: transparent
+                        border: 2px solid magenta
+                        
+    & .movie-cut
+        text-align: center
+        & .head
+            font-size: 2rem
+            padding: 0
+        & .detail-trailer
+            width: 820px
+            height: 460px
+            float: none
+            clear: both
+            width: 700px
+            position: relative
+            padding-bottom: 56.25%
+            padding-top: 25px
+            height: 0
+            margin: 0 auto
+            max-width: 100%        
+            & #frame
+                position: absolute
+                top: 0
+                left: 0
+                width: 100%
+                height: 100%
+                max-width: 700px
+                max-height: 400px
+                margin-top: 2rem
+    & .comment-section
+        background: #212121
+        padding: 4rem
+        width: 70%
+        margin: auto
+        color: #fff
+        line-height: 20px
+        font-size: .7rem
+        text-transform: uppercase
+        border-radius: 20px
+        margin-top: 2rem

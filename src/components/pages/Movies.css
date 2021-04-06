@@ -1,0 +1,33 @@
+section#movies {
+  margin-top: 6rem;
+}
+
+section#movies .cards {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+section#movies .cards .card {
+  width: 18%;
+  padding-bottom: 2rem;
+  margin-bottom: 3rem;
+}
+
+section#movies .cards .card .movie-title {
+  font-size: .8rem;
+  line-height: 15px;
+}
+
+section#movies .cards .card .movie-description {
+  font-size: .7rem;
+  line-height: 15px;
+}
+
+section#movies .cards .card .movie-genres {
+  font-size: .8rem;
+}
+
+section#movies .cards .card .movie-buttons button {
+  font-size: .5rem;
+}
+/*# sourceMappingURL=Movies.css.map */
