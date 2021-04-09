@@ -62,13 +62,13 @@ footer .main_footer .services a::after, footer .main_footer .links a::after, foo
   position: absolute;
   bottom: 20%;
   left: 0;
-  background-color: #0099ffa8;
+  background-color: rgba(0, 153, 255, 0.659);
   -webkit-transition: all .3s linear;
   transition: all .3s linear;
 }
 
 footer .main_footer .services a:hover, footer .main_footer .links a:hover, footer .main_footer .contact a:hover {
-  color: #0099ffa8;
+  color: rgba(0, 153, 255, 0.659);
 }
 
 footer .main_footer .services a:hover::after, footer .main_footer .links a:hover::after, footer .main_footer .contact a:hover::after {
@@ -87,5 +87,10 @@ footer .main_footer .copyright {
 
 footer .main_footer img {
   width: 150px;
+}
+
+.contact {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
 }
 /*# sourceMappingURL=Footer.css.map */

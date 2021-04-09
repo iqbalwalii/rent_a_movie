@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Epilogue:wght@300;500;600;700&display=swap");
 .card {
-  -webkit-box-shadow: 1px 2px 5px 5px #2422221f;
-          box-shadow: 1px 2px 5px 5px #2422221f;
+  -webkit-box-shadow: 1px 2px 5px 5px rgba(37, 34, 34, 0.199);
+          box-shadow: 1px 2px 5px 5px rgba(37, 34, 34, 0.199);
   width: 22%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -20,6 +20,7 @@
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
+  padding-bottom: 1rem;
 }
 
 .card:hover {
@@ -52,6 +53,7 @@
   font-family: 'Epilogue', sans-serif;
   -webkit-transition: all .3s linear;
   transition: all .3s linear;
+  font-size: .8rem;
 }
 
 .card .movie-image {
@@ -64,7 +66,7 @@
 }
 
 .card .movie-title {
-  font-size: 1.2rem;
+  font-size: 1rem;
   text-transform: uppercase;
   text-align: center;
   line-height: 25px;
@@ -108,11 +110,13 @@
 .card .movie-buttons > button:first-child {
   background: magenta;
   border-radius: 10px;
+  cursor: pointer;
 }
 
 .card .movie-buttons > button:last-child {
   border: 2px solid magenta;
   color: #000;
   border-radius: 10px;
+  cursor: pointer;
 }
 /*# sourceMappingURL=Card.css.map */

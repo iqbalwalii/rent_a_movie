@@ -17,7 +17,7 @@
   font-size: 3rem;
   font-weight: bolder;
   color: #3d3d3d;
-  padding: 4rem 0;
+  padding-top: 4rem;
 }
 
 .eight {
@@ -29,17 +29,19 @@
 .eight .trending_row {
   margin-bottom: 2rem;
   position: relative;
-  z-index: 102;
+  border-radius: 20px;
+  z-index: 98;
+  background: #ffffff2c;
 }
 
 .eight .trending_row::after {
   border-radius: 10px;
   display: block;
   z-index: -100;
-  width: 100%;
+  width: 50%;
   height: 100%;
   content: '';
-  background: #ff00ffc5;
+  background: #267e26;
   position: absolute;
   bottom: 0;
   left: 0;
@@ -50,6 +52,7 @@
   display: -ms-flexbox;
   display: flex;
   z-index: 100;
+  height: 50px;
   -ms-flex-pack: distribute;
       justify-content: space-around;
   -webkit-box-align: center;
@@ -58,14 +61,27 @@
   background: transparent;
 }
 
+.eight .trending_row .progress_bar h4 {
+  color: yellow;
+  font-weight: 900;
+  font-size: 1.5rem;
+}
+
 .eight .trending_row .progress_bar > * {
-  color: #fff;
+  color: #000;
+  font-size: .7rem;
+  font-style: italic;
+  font-weight: 400;
 }
 
 .eight .trending_row .progress_bar button {
   padding: 1px;
-  font-size: .9rem;
-  padding: 1rem 2rem;
+  font-size: .8rem;
+  letter-spacing: 1px;
+  padding: .7rem 1rem;
+  background: #faf60e;
+  color: #212121;
+  font-family: 'Epilogue', sans-serif;
 }
 
 .four {

@@ -1,11 +1,26 @@
-
 section#movie-details
     width: 80vw
     margin: 6rem auto
     margin-bottom: 0
     font-family: 'Epilogue', sans-serif
     padding: 2rem
-    
+    & .cast
+        display: flex
+        justify-content: space-around
+        align-items: center
+        padding: 1rem
+        margin-top: 2rem
+        & .member
+            display: flex
+            flex-direction: column
+            background: #ffffff63
+            padding: 0 .5rem 1rem
+            border-radius: 10px
+            & img
+                border-radius: 10px
+                width: 130px
+
+
     & .movie-header
         display: flex
         justify-content: space-around

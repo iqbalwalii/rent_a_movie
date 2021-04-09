@@ -6,6 +6,37 @@ section#movie-details {
   padding: 2rem;
 }
 
+section#movie-details .cast {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
+section#movie-details .cast .member {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: #ffffff63;
+  padding: 0 .5rem 1rem;
+  border-radius: 10px;
+}
+
+section#movie-details .cast .member img {
+  border-radius: 10px;
+  width: 130px;
+}
+
 section#movie-details .movie-header {
   display: -webkit-box;
   display: -ms-flexbox;

@@ -1,6 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@300;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@300;500;600;700&display=swap')
 .card
-    box-shadow: 1px 2px 5px 5px #2422221f
+    box-shadow: 1px 2px 5px 5px rgba(37, 34, 34, 0.199)
     width: 22%
     display: flex
     flex-direction: column
@@ -9,6 +9,7 @@
     position: relative
     transition: all .3s ease-in-out
     height: fit-content
+    padding-bottom: 1rem
     &:hover
         transform: scale(1.03)
     &:hover .movie-actions
@@ -28,7 +29,8 @@
         height: 100px
         padding: 1rem
         font-family: 'Epilogue', sans-serif
-        transition: all .3s linear        
+        transition: all .3s linear
+        font-size: .8rem     
     & .movie-image
         margin: auto
         height: 35vh
@@ -36,7 +38,7 @@
         border-radius: 10px
         object-fit: cover
     & .movie-title
-        font-size: 1.2rem
+        font-size: 1rem
         text-transform: uppercase
         text-align: center
         line-height: 25px
@@ -66,7 +68,9 @@
             &:first-child
                 background: magenta
                 border-radius: 10px
+                cursor: pointer
             &:last-child
                 border: 2px solid magenta
                 color: #000
                 border-radius: 10px
+                cursor: pointer

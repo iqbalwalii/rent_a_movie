@@ -1,0 +1,12 @@
+.about {
+  width: 70%;
+  margin: auto;
+  padding: 3rem;
+}
+
+.about .about-des {
+  margin-top: 2rem;
+  letter-spacing: 1px;
+  line-height: 25px;
+}
+/*# sourceMappingURL=About.css.map */

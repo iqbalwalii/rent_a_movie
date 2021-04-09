@@ -1,0 +1,60 @@
+.contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.contact img {
+  width: 50vw;
+}
+
+.contact .contact-form {
+  margin-top: 2.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 40vw;
+  padding: 2rem;
+}
+
+.contact .contact-form > input {
+  width: 80%;
+  margin-bottom: 1rem;
+  height: 40px;
+  background: #fffafabd;
+}
+
+.contact .contact-form > input:last-child {
+  width: 40%;
+  margin-left: 6rem;
+  background: #ffff00be;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  -webkit-transition: all .2s ease-in;
+  transition: all .2s ease-in;
+}
+
+.contact .contact-form > input:last-child:hover {
+  background: #f0a42a;
+}
+
+.contact .contact-form > textarea {
+  background: #fffafabd;
+  width: 80%;
+  margin-bottom: 2.5rem;
+  padding: .7rem;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+}
+/*# sourceMappingURL=Contact.css.map */

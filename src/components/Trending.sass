@@ -11,7 +11,7 @@
     font-size: 3rem
     font-weight: bolder
     color: #3d3d3d
-    padding: 4rem 0    
+    padding-top: 4rem    
 .eight
     padding: 2rem   
     border-radius: 10px
@@ -19,30 +19,44 @@
     & .trending_row
         margin-bottom: 2rem
         position: relative
-        z-index: 102
+        border-radius: 20px 
+        z-index: 98
+        background: #ffffff2c
         &::after
             border-radius: 10px
             display: block
             z-index: -100
-            width: 100%
+            width: 50%
             height: 100%
             content: ''
-            background: #ff00ffc5
+            background: #267e26
             position: absolute
             bottom: 0
             left: 0
         & .progress_bar
             display: flex
             z-index: 100
+            height: 50px
             justify-content: space-around
             align-items: center
             background: transparent
+            & h4
+                color: yellow
+                font-weight: 900
+                font-size: 1.5rem
             & > *
-                color: #fff
+                color: #000
+                font-size: .7rem
+                font-style: italic
+                font-weight: 400
             & button
                 padding: 1px
-                font-size: .9rem
-                padding: 1rem 2rem 
+                font-size: .8rem
+                letter-spacing: 1px
+                padding: .7rem 1rem
+                background: #faf60e
+                color: #212121
+                font-family: 'Epilogue', sans-serif
 .four
     position: relative
     width: 23%

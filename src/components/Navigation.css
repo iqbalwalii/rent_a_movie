@@ -8,11 +8,12 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  background-color: #ffffff52;
+  background-color: rgba(255, 255, 255, 0.322);
   padding: 1rem 2rem;
   position: fixed;
   top: 0;
   left: 0;
+  z-index: 100;
 }
 
 .navbar .nav_links {
@@ -41,8 +42,8 @@
 }
 
 .navbar .nav_links li:hover {
-  color: #45b4e7;
   -webkit-transform: scale(1.02);
           transform: scale(1.02);
+  color: #45b4e7;
 }
 /*# sourceMappingURL=Navigation.css.map */
