@@ -9,6 +9,7 @@ import Movies from "./components/pages/Movies";
 import Detail from "./components/pages/Detail";
 import Contact from "./components/pages/Contact";
 import About from "./components/pages/About";
+import Result from "./components/pages/Result";
 function App() {
   return (
     <BrowserRouter>
@@ -19,6 +20,7 @@ function App() {
         <Route path="/detail" component={Detail} />
         <Route path="/contact" component={Contact} />
         <Route path="/about" component={About} />
+        <Route path="/result" component={Result} />
       </Switch>
       <Footer />
     </BrowserRouter>

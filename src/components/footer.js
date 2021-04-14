@@ -7,7 +7,7 @@ const Footer = () => {
       <img src="/assets/images/waves.svg" alt="curve"></img>
       <div className="main_footer">
         <div className="footer_sections logo">
-          <img src="/assets/images/lo.svg" alt="logo" />
+          <img src="/assets/images/logo.png" alt="logo" />
         </div>
         <div className="footer_sections services">
           <h4>SERVICES</h4>
